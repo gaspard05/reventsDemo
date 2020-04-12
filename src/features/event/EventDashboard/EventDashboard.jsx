@@ -75,15 +75,14 @@ class EventDashboard extends Component {
         </Grid.Column>
         <Grid.Column width={6}>
           <Button
-            onClick={ () => this.handleIsOpenToggle()}
+            onClick={this.handleIsOpenToggle}
             positive
             content="Create Event"
           />
-          { isOpen && <EventForm cancelFormOpen={ this.handleIsOpenToggle}/>}
+          {isOpen && <EventForm cancelFormOpen={this.handleIsOpenToggle} />}
         </Grid.Column>
       </Grid>
     );
   }
 }
-
 export default EventDashboard;
